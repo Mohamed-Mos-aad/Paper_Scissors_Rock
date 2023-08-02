@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FontAwesome CSS File Link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="css/styel.css">
+    <!-- Title -->
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start Nav -->
+        <div class="nav">
+            <div class="title">
+                <h1>
+                    ROCK<br>
+                    PAPER<br>
+                    SCISSORS
+                </h1>
+            </div>
+            <div class="score">
+                <h2>
+                    SCORE
+                    <span id="score">0</span>
+                </h2>
+            </div>
+        </div>
+        <!-- End Nav -->
+
+        <!-- Start Game -->
+        <div class="game" id="game">
+            <div class="play" id="play">
+                <img src="images/bg-triangle.svg" alt="BackGround Photo">
+                <div class="options" id="options">
+                    <div class="option" id="icon-paper.svg">
+                        <img src="images/icon-paper.svg" id="icon-paper.svg" alt="">
+                    </div>
+                    <div class="option" id="icon-scissors.svg">
+                        <img src="images/icon-scissors.svg" id="icon-scissors.svg" alt="">
+                    </div>
+                    <div class="option" id="icon-rock.svg">
+                        <img src="images/icon-rock.svg" id="icon-rock.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bite" id="bite">
+                <div class="member" id="meFix">
+                    <h3>YOU PICKED</h3>
+                    <div class="mepicked show-before" id="mepicked">
+                        
+                    </div>
+                </div>
+                <div class="lgResult" id="lgResult">
+                    <h4 id="lgResultWord">YOU LOSE</h4>
+                    <button id="lgplayBtn">PLAY AGAIN</button>
+                </div>
+                <div class="member">
+                    <h3>THE HOUSE PICKED</h3>
+                    <div class="pcpicked show-before" id="pcpicked">
+                        <div class="option" id="pcoption">
+                            <img src="images/icon-rock.svg" id="icon-rock.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smResult" id="smResult">
+                <h4 id="smResultWord">YOU LOSE</h4>
+                <button id="smplayBtn">PLAY AGAIN</button>
+            </div>
+            <div class="rules">
+                <button id="rulesButton">RULES</button>
+                <div class="rules-page" id="rulesPage">
+                    <div class="content">
+                        <h4>RULES <span id="rulesClose"><i class="fa-solid fa-xmark"></i></span></h4>
+                        <div class="help">
+                            <div class="help-top">
+                                <div class="box">
+                                    <img src="images/icon-paper.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>beat</p>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div class="box">
+                                    <img src="images/icon-scissors.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="help-mid">
+                                <div class="text">
+                                    <p>beat</p>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <div class="text">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <p>beat</p>
+                                </div>
+                            </div>
+                            <div class="help-bottom">
+                                <div class="box">
+                                    <img src="images/icon-rock.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Game -->
+    </div>
+    <!-- End Container -->
+
+
+    <!-- Js File Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
